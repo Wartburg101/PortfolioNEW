@@ -1,0 +1,133 @@
+:root{
+    --white: #FDF9F0;
+    --black: #181818;
+    --orange: #F5CB5C;
+
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+    
+}
+
+  @supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+  }
+
+body{
+    background-color: var(--black);
+    margin:0;
+    padding:10px;
+    color: var(--white);
+    font-family: "Baskervville", serif;
+  font-optical-sizing: auto;
+}
+nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 5px;
+    position:fixed;
+    top:0;
+    overflow: hidden;
+    height:80px;
+    width:100%;
+}
+
+nav a{
+    color: var(--white);
+    text-decoration: none;
+    font-family: "Baskervville", serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    
+}
+#navlist{
+    display:flex;
+    flex-direction: column;
+}
+#signature {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+   
+}
+#signature img{
+    width:100%;
+}
+#landing-page-center-text{
+    display: flex;
+    grid-column: span 3 / span 3;
+    grid-row-start: 2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#landing-page-center-text h3{
+    font-family: "Baskervville", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    color: var(--orange);
+}
+
+
+#landing-page-name {
+    display: flex;
+    justify-content: center;
+    grid-column: span 3 / span 3;
+    grid-row-start: 3;
+    color: var(--white);
+    font-family: Inter;
+    font-weight: 1300;
+    font-size: 120pt;
+    margin-bottom: 0;
+}
+#landing-page-name h1{
+    margin:0;
+}
+#landing-page{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px;
+    height: 90vh;
+    background-color: var(--black);
+}
+#about video{
+    object-fit: cover;
+}
+#about{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 5px;
+    height:30vh;
+    width:90%;
+    
+}
+
+#about-text{
+    display: flex;
+    grid-column: span 2 / span 2;
+    grid-column-start: 4;
+    align-items: center;
+}
+
+#about-text p{
+    height:auto;
+    text-align: left;
+    font-size: 2vh;
+    word-wrap:break-word;
+}
+
+#showreel-holder{
+    grid-column: span 3 / span 3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    height:auto;
+}
